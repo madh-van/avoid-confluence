@@ -1,0 +1,6 @@
+- id: ac
+  name: Avoid Confluence
+  entry: ac
+  language: python
+  stages: [commit]
+  description: " "

@@ -1,0 +1,9 @@
+repos:
+-   repo: ~/Git/Projects/Avoid-confluence/
+    rev: 973f0d83520d8c9aae210a250d56ce3cf6165cb0
+    hooks:
+    -  id: ac
+       args:
+         - --toc
+         - --input-format=org
+    types: [python]
