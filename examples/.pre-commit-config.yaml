@@ -1,6 +1,6 @@
 repos:
--   repo: ~/Git/Projects/Avoid-confluence/
-    rev: 973f0d83520d8c9aae210a250d56ce3cf6165cb0
+-   repo: https://gitlab.com/madh-van/avoid-confluence
+    rev: 515ed224cc4691155d2e2868e0b0e2f0fc293e1b
     hooks:
     -  id: ac
        args:

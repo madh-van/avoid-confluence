@@ -1,0 +1,63 @@
+-*- mode: org -*-
+#+title: Avoid confluence
+#+date: 2021-01-06
+
+* Problem
+
+ 1) Are you tired of using the confluence web page regularly via the
+    browser ?
+ 2) Are you suffering from an outdated confluence page; constantly
+    having to update the pages manually ?
+ 3) Is your documentation not inline with the development changes ?
+
+ A problem indeed.
+
+* Solution
+
+  Automate this process with ~ac~ (aka avoid confluence).
+
+*  Getting started
+  
+  Copy the contents of  ~examples/~ to your notes dir and follow the
+  naming conventions (avoid space)
+#+begin_example
+  20210209_103843--research-nn--notes-on-neural-network.org
+  <<UID>>--<<TAG>>--<<TITLE>>
+#+end_example
+  
+  + Setup for the notes dir
+
+  Implicit assumptions; both =Guix=, and =Direnv= in installed globally.
+
+   #+begin_example
+# allow autoload of environment
+direnv allow
+
+# autoupdate to the latest commit of the project
+pre-commit autoupdate
+
+# to run test the project
+pre-commit try-repo https://gitlab.com/madh-van/avoid-confluence  ac -v
+
+# install hook to git by calling
+pre-commit install
+
+#+end_example
+
+  I personaly like to take notes in markup language like =org= in emacs
+  and Avoid confluence (ac) to keeps my documentaion up today.
+
+* Dependencies
+
+ The following dependencies are used for this project.
+
+ 1) =atlassian-python-api= to upload notes via its python api
+ 2) =pandoc= vai =pypandoc= (python interface) for converting the notes to
+    confluence markdown. (also called as 'jira')
+ 3) =precommit= to automate the selection process of uploading modified notes.
+
+* Reference
+
+  1. https://eising.it/posts/org-pandoc-confluence/
+  2. https://wiki.earthdata.nasa.gov/display/UG/Confluence+Wiki+Markup
+  3. https://confluence.atlassian.com/doc/confluence-wiki-markup-251003035.html

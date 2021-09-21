@@ -1,0 +1,16 @@
+-*- mode: org -*-
+
+* init feature list
+
+ + [X] Added support for labels
+ + [X] Improved naming title from filename.
+ + [X] Support Config to setup connection to confluence page
+ + [X] Pre-commit interface
+ + [X] Support multiple directories
+ + [X] Upload image for absolute path
+ + [X] Upload image for realive path from file
+ + [X] Upload files (absolute path)
+ + [X] Support tables
+ + [X] Support source block
+ + [X] Support web links
+ + [X] Support pages with heading

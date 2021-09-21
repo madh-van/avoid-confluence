@@ -99,13 +99,16 @@ def main() -> None:
 
     config = configparser.ConfigParser()
     config.read(".av-config.ini")
+    # TODO check the config file is clean.
+
+    confluence_config = config["CONFLUENCE"]
 
     update_space(
-        url=config["CONFLUENCE"]["URL"],
-        username=config["CONFLUENCE"]["USERNAME"],
-        password=config["CONFLUENCE"]["PASSWORD"],
-        space=config["CONFLUENCE"]["SPACE"],
-        dashboard=config["CONFLUENCE"]["CONFLUENCE_DASHBOARD"],
+        url=confluence_config["URL"],
+        username=confluence_config["USERNAME"],
+        password=confluence_config["PASSWORD"],
+        space=confluence_config["SPACE"],
+        dashboard=confluence_config["CONFLUENCE_DASHBOARD"],
         sync_up=args.sync_up,
         filenames=args.filenames,
         input_format=input_format,
