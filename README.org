@@ -13,7 +13,9 @@
 
 * Solution
 
-  Automate this process with ~ac~ (aka avoid confluence).
+  I personaly like to take notes in markup language like =org= in emacs
+  and use Avoid confluence (ac) to keeps my documentaion up today.
+
 
 *  Getting started
   
@@ -42,9 +44,6 @@ pre-commit try-repo https://gitlab.com/madh-van/avoid-confluence  ac -v
 pre-commit install
 
 #+end_example
-
-  I personaly like to take notes in markup language like =org= in emacs
-  and Avoid confluence (ac) to keeps my documentaion up today.
 
 * Dependencies
 
